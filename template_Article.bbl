@@ -3,6 +3,13 @@
 \bibitem{nvidia_modulus}
 Modulus user guide.
 
+\bibitem{haghighat2021sciann}
+Ehsan Haghighat and Ruben Juanes.
+\newblock Sciann: A keras/tensorflow wrapper for scientific computations and
+  physics-informed deep learning using artificial neural networks.
+\newblock {\em Computer Methods in Applied Mechanics and Engineering},
+  373:113552, 2021.
+
 \bibitem{autofiff_pytorch}
 Adam {Paszkem,} Sam {Gross,} Soumith {Chintala,} Gregory {Chanan,} Edward
   {Yang,} Zachary {DeVito,} Zeming {Lin,} Alban {Desmaison,} Luca
@@ -10,6 +17,12 @@ Adam {Paszkem,} Sam {Gross,} Soumith {Chintala,} Gregory {Chanan,} Edward
 \newblock Automatic differentiation in pytorch.
 \newblock In {\em 32st Conference on Neural Processing Systems (NIPS 2017)},
   2017.
+
+\bibitem{lu2021deepxde}
+Lu~Lu, Xuhui Meng, Zhiping Mao, and George~Em Karniadakis.
+\newblock {DeepXDE}: A deep learning library for solving differential
+  equations.
+\newblock {\em SIAM Review}, 63(1):208--228, 2021.
 
 \bibitem{Nicole_SigProp}
 Nicole Patterson.

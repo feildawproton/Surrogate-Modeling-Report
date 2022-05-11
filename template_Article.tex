@@ -422,10 +422,12 @@ Where $S(\textbf{x}_k)$ is the output from the simulation.
 Physics-based neural networks can be implemented fairly easily in any neural network framework, as \cite{pbdl_book} does with PyTorch.  In fact, since none of the core techniques are black boxes, any of these methods could be re-implemented in a fast language if necessary.  However, there are some packages available that make quick development of physics-based neural networks easier. 
 
 1.) Nvidia Modulus, \cite{nvidia_modulus} is easy to use, well documented, and implements much of the latest research in physic-bases neural networks.  Works with PyTorch.
+
 2.) NeuralPDE.jl, \cite{zubov2021neuralpde} is part of SciML.  And is a Julia language package with PINNs and deep Forward-Backwards Stochastic Differential Equations solvers. 
-3.) SciAnn
 
+3.) SciAnn: Neural Networks for Scientific Computations, \cite{haghighat2021sciann}, a package using TensorFlow and Keras.
 
+4.) DeepXDE, \cite{lu2021deepxde},  a library containing algorithms for PINNs and DeepONets.  Compatible with Tensorflow and PyTorch.
 
 \bibliographystyle{plain}
 \bibliography{reference}
