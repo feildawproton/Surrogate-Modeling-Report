@@ -1,0 +1,315 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.5.8)  11 MAY 2022 09:49
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**template_Article.tex
+(./template_Article.tex
+LaTeX2e <2020-02-02> patch level 2
+L3 programming layer <2020-02-14>
+(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2019/12/20 v1.4l Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2019/12/20 v1.4l Standard LaTeX file (size option)
+)
+\c@part=\count167
+\c@section=\count168
+\c@subsection=\count169
+\c@subsubsection=\count170
+\c@paragraph=\count171
+\c@subparagraph=\count172
+\c@figure=\count173
+\c@table=\count174
+\abovecaptionskip=\skip47
+\belowcaptionskip=\skip48
+\bibindent=\dimen134
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2019/11/30 v1.2a Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2019/11/30 v1.4a Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 105.
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen135
+\Gin@req@width=\dimen136
+)
+(/usr/share/texlive/texmf-dist/tex/latex/caption/subcaption.sty
+Package: subcaption 2020/01/22 v1.3d Sub-captions (AR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2020/01/03 v3.4h Customizing captions (AR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2020/01/03 v1.8h caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 61.
+\captionmargin=\dimen137
+\captionmargin@=\dimen138
+\captionwidth=\dimen139
+\caption@tempdima=\dimen140
+\caption@indent=\dimen141
+\caption@parindent=\dimen142
+\caption@hangindent=\dimen143
+Package caption Info: Standard document class detected.
+)
+\c@caption@flags=\count175
+\c@continuedfloat=\count176
+)
+\c@subfigure=\count177
+\c@subtable=\count178
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2020/01/20 v2.17e AMS math features
+\@mathmargin=\skip49
+
+For additional information on amsmath, use the `?' option.
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01 AMS text
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks15
+\ex@=\dimen144
+))
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen145
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count179
+LaTeX Info: Redefining \frac on input line 227.
+\uproot@=\count180
+\leftroot@=\count181
+LaTeX Info: Redefining \overline on input line 389.
+\classnum@=\count182
+\DOTSCASE@=\count183
+LaTeX Info: Redefining \ldots on input line 486.
+LaTeX Info: Redefining \dots on input line 489.
+LaTeX Info: Redefining \cdots on input line 610.
+\Mathstrutbox@=\box45
+\strutbox@=\box46
+\big@size=\dimen146
+LaTeX Font Info:    Redeclaring font encoding OML on input line 733.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 734.
+\macc@depth=\count184
+\c@MaxMatrixCols=\count185
+\dotsspace@=\muskip16
+\c@parentequation=\count186
+\dspbrk@lvl=\count187
+\tag@help=\toks16
+\row@=\count188
+\column@=\count189
+\maxfields@=\count190
+\andhelp@=\toks17
+\eqnshift@=\dimen147
+\alignsep@=\dimen148
+\tagshift@=\dimen149
+\tagwidth@=\dimen150
+\totwidth@=\dimen151
+\lineht@=\dimen152
+\@envbody=\toks18
+\multlinegap=\skip50
+\multlinetaggap=\skip51
+\mathdisplay@stack=\toks19
+LaTeX Info: Redefining \[ on input line 2859.
+LaTeX Info: Redefining \] on input line 2860.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
+File: l3backend-pdfmode.def 2020-02-03 L3 backend support: PDF mode
+\l__kernel_color_stack_int=\count191
+\l__pdf_internal_box=\box47
+)
+(./template_Article.aux)
+\openout1 = `template_Article.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+
+(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count192
+\scratchdimen=\dimen153
+\scratchbox=\box48
+\nofMPsegments=\count193
+\nofMParguments=\count194
+\everyMPshowfont=\toks20
+\MPscratchCnt=\count195
+\MPscratchDim=\dimen154
+\MPnumerator=\count196
+\makeMPintoPDFobject=\count197
+\everyMPtoPDFconversion=\toks21
+) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 17.
+
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 17.
+
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+) [1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+<images/autodiff.png, id=15, 1729.46124pt x 909.3975pt>
+File: images/autodiff.png Graphic file (type png)
+<use images/autodiff.png>
+Package pdftex.def Info: images/autodiff.png  used on input line 49.
+(pdftex.def)             Requested size: 345.0pt x 181.40448pt.
+ [2 <./images/autodiff.png>]
+<images/nn_from_ml_book.png, id=23, 595.22375pt x 380.42125pt>
+File: images/nn_from_ml_book.png Graphic file (type png)
+<use images/nn_from_ml_book.png>
+Package pdftex.def Info: images/nn_from_ml_book.png  used on input line 82.
+(pdftex.def)             Requested size: 345.0pt x 220.49355pt.
+ [3] [4 <./images/nn_from_ml_book.png>] [5] [6]
+<images/pbdl_unet.png, id=43, 2752.2825pt x 602.25pt>
+File: images/pbdl_unet.png Graphic file (type png)
+<use images/pbdl_unet.png>
+Package pdftex.def Info: images/pbdl_unet.png  used on input line 220.
+(pdftex.def)             Requested size: 345.0pt x 75.49242pt.
+ [7 <./images/pbdl_unet.png>]
+<images/FNO.png, id=49, 3821.27625pt x 1425.325pt>
+File: images/FNO.png Graphic file (type png)
+<use images/FNO.png>
+Package pdftex.def Info: images/FNO.png  used on input line 247.
+(pdftex.def)             Requested size: 345.0pt x 128.66519pt.
+ [8]
+<images/fno_darcy.png, id=53, 1522.68875pt x 257.96375pt>
+File: images/fno_darcy.png Graphic file (type png)
+<use images/fno_darcy.png>
+Package pdftex.def Info: images/fno_darcy.png  used on input line 275.
+(pdftex.def)             Requested size: 345.0pt x 58.44476pt.
+ [9 <./images/FNO.png>]
+<images/ppinn schematic.png, id=58, 853.1875pt x 645.41125pt>
+File: images/ppinn schematic.png Graphic file (type png)
+<use images/ppinn schematic.png>
+Package pdftex.def Info: images/ppinn schematic.png  used on input line 306.
+(pdftex.def)             Requested size: 169.0519pt x 127.87848pt.
+<images/Xtfc_scheme.png, id=59, 968.86969pt x 504.38437pt>
+File: images/Xtfc_scheme.png Graphic file (type png)
+<use images/Xtfc_scheme.png>
+Package pdftex.def Info: images/Xtfc_scheme.png  used on input line 312.
+(pdftex.def)             Requested size: 169.0519pt x 88.00691pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 313--313
+[]\OT1/cmr/m/n/9 (b) |Xtfc of PINN schematic from
+ []
+
+[10 <./images/fno_darcy.png>]
+Overfull \hbox (63.88536pt too wide) detected at line 327
+[] \OT1/cmr/m/n/10 = [] []((0 \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 continuity\
+OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x[]; y[]\OT1/cmr/m/n/10 ))[] + (0 \OMS/cmsy/m/
+n/10 ^^@ \OML/cmm/m/it/10 momentum[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x[]; y[]\
+OT1/cmr/m/n/10 ))[] + (0 \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 momentum[]\OT1/c
+mr/m/n/10 (\OML/cmm/m/it/10 x[]; y[]\OT1/cmr/m/n/10 ))[])
+ []
+
+<images/ldc_lambda.png, id=64, 738.1176pt x 299.6796pt>
+File: images/ldc_lambda.png Graphic file (type png)
+<use images/ldc_lambda.png>
+Package pdftex.def Info: images/ldc_lambda.png  used on input line 331.
+(pdftex.def)             Requested size: 345.0pt x 140.07205pt.
+<images/Screenshot 2022-05-09 at 17-19-07 TensorBoard.png, id=65, 1391.1975pt x
+ 1011.78pt>
+File: images/Screenshot 2022-05-09 at 17-19-07 TensorBoard.png Graphic file (ty
+pe png)
+<use images/Screenshot 2022-05-09 at 17-19-07 TensorBoard.png>
+Package pdftex.def Info: images/Screenshot 2022-05-09 at 17-19-07 TensorBoard.p
+ng  used on input line 339.
+(pdftex.def)             Requested size: 241.49895pt x 175.62837pt.
+[11 <./images/ppinn schematic.png> <./images/Xtfc_scheme.png>] [12 <./images/ld
+c_lambda.png> <./images/Screenshot 2022-05-09 at 17-19-07 TensorBoard.png>]
+[13]
+<images/SignalLoss.png, id=81, 733.74126pt x 255.95625pt>
+File: images/SignalLoss.png Graphic file (type png)
+<use images/SignalLoss.png>
+Package pdftex.def Info: images/SignalLoss.png  used on input line 389.
+(pdftex.def)             Requested size: 345.0pt x 120.35022pt.
+<images/neural_adapter.png, id=82, 1513.655pt x 369.38pt>
+File: images/neural_adapter.png Graphic file (type png)
+<use images/neural_adapter.png>
+Package pdftex.def Info: images/neural_adapter.png  used on input line 402.
+(pdftex.def)             Requested size: 345.0pt x 84.18907pt.
+ [14 <./images/SignalLoss.png>] [15 <./images/neural_adapter.png>]
+(./template_Article.bbl) [16] (./template_Article.aux) ) 
+Here is how much of TeX's memory you used:
+ 3201 strings out of 483183
+ 49583 string characters out of 5966293
+ 283769 words of memory out of 5000000
+ 18184 multiletter control sequences out of 15000+600000
+ 544301 words of font info for 68 fonts, out of 8000000 for 9000
+ 14 hyphenation exceptions out of 8191
+ 48i,12n,46p,854b,466s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/font
+s/type1/public/amsfonts/cm/cmbx9.pfb></usr/share/texlive/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib1
+0.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><
+/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/sh
+are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/tex
+live/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmsy5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmti10.pfb>
+Output written on template_Article.pdf (16 pages, 1522776 bytes).
+PDF statistics:
+ 151 PDF objects out of 1000 (max. 8388607)
+ 92 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 56 words of extra memory for PDF output out of 10000 (max. 10000000)
+

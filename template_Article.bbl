@@ -1,0 +1,59 @@
+\begin{thebibliography}{10}
+
+\bibitem{nvidia_modulus}
+Modulus user guide.
+
+\bibitem{autofiff_pytorch}
+Adam {Paszkem,} Sam {Gross,} Soumith {Chintala,} Gregory {Chanan,} Edward
+  {Yang,} Zachary {DeVito,} Zeming {Lin,} Alban {Desmaison,} Luca
+  {Antiga,}~Adam {Lerer}.
+\newblock Automatic differentiation in pytorch.
+\newblock In {\em 32st Conference on Neural Processing Systems (NIPS 2017)},
+  2017.
+
+\bibitem{Nicole_SigProp}
+Nicole Patterson.
+\newblock Signal propagation equations.
+
+\bibitem{pinn_part1}
+Maziar {Raissi,}~Paris {Perdikaris,} and George~Em {Karniadakis}.
+\newblock Physics informed deep learning (part 1): Data-driven solutions of
+  nonlinear partial differential equations.
+
+\bibitem{autodiff_survey}
+Atilim G"{u}nes {Bayden,} Barak A. {Pearlmutter,} Alexey~Andreyevich {Radul,}
+  and Jeffrey~Mark {Siskind}.
+\newblock Automatic differentiation in machine learning: a survey.
+
+\bibitem{neural_operators}
+Nikola {Kovachki,*} Zongyi {Li,*} Burigede {Liu,} Kamyar {Azizzadenesheli,}
+  Kaushik {Bhattacharya,}~Andrew {Stuart,} and Anima {Anandkumar}.
+
+\bibitem{fno}
+Zongyi {Li,} Nikola {Kovachki,} Kamyar {Azizzadenesheli,} Burigede {Liu,}
+  Kaushik {Bhattacharya,}~Andrew {Stuart,} and Anima {Anandkumar,}.
+\newblock Fourier neural operator for parametric partial differential
+  equations.
+
+\bibitem{ml_book}
+Sergios {Theodoridis}.
+\newblock {\em Machine Learning: A Bayesian and Optimization Perspective}.
+
+\bibitem{pbdl_book}
+N.~{Thuerey,} P. {Hall,} M. {Mueller,} P. {Schnell,} F. {Trost,}~K. {Um}.
+\newblock {\em Physics-based Deep Learning}.
+
+\bibitem{ppinn}
+Xuhui {Meng,} Zhen {Li,}~Dongkun {Zhang,} and George~Em {Karniadakis}.
+\newblock Ppinn: Parareal physics-informed neural network for time-dependent
+  pdes.
+
+\bibitem{zubov2021neuralpde}
+Kirill Zubov, Zoe McCarthy, Yingbo Ma, Francesco Calisto, Valerio Pagliarino,
+  Simone Azeglio, Luca Bottero, Emmanuel Luj{\'a}n, Valentin Sulzer, Ashutosh
+  Bharambe, et~al.
+\newblock Neuralpde: Automating physics-informed neural networks (pinns) with
+  error approximations.
+\newblock {\em arXiv preprint arXiv:2107.09443}, 2021.
+
+\end{thebibliography}
