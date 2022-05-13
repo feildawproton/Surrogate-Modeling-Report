@@ -17,7 +17,7 @@
 \maketitle
 
 \begin{abstract}
-The purpose of surrogate modeling is to replace some target model with an approximation that mimics the target's behavior.  This is typically done to replace an explicit, explainable, but comparatively slow model with an implicit, less explainable, but much faster model.  We will define terms for this report as follows:  Physics-Based Machine Learning is the application of mathematical physics to machine learning.  Physics-Informed Neural Networks (PINNs) include conservation terms, in the form of partial differential equations (PDEs), as part of their loss function.  This report covers Physics-Based Neural Networks, with a focus on the use of applied mathematics in modeling with neural networks.  
+The purpose of surrogate modeling is to replace some target model with an approximation that mimics the target's behavior.  This is typically done to replace an explicit, explainable, but comparatively slow model with an implicit, less explainable, but much faster model.  We will define terms for this proposal as follows:  Physics-Based Machine Learning is the application of mathematical physics to machine learning.  Physics-Informed Neural Networks (PINNs) include conservation terms, in the form of partial differential equations (PDEs), as part of their loss function.  This technical section covers Physics-Based Neural Networks, with a focus on the use of applied mathematics in modeling with neural networks.  
 
 \end{abstract}
 
@@ -223,7 +223,7 @@ arg min_\theta \frac{1}{2}\sum_{k=0}^{K_L - 1}(N(\textbf{x}_k, \boldsymbol{\thet
 \end{figure}
 
 \subsubsection{Neural Operators: Fourier Neural Operator}
-Recall that an operator takes one function and gives another.  The purpose of neural operators is to extend spatially aware neural networks from finite-dimension to infinite dimension.  Like the functions above can have arbitrary resolution in parameter space $u(x) = y$, the same property is desired for neural network that can take and map an arbitrary temporal-spatial arrangement of states and parameters, as a function, at arbitrary resolution.  \cite{neural_operators} formally describes neural operators as well as provide proof of their universal approximation.  Formally, he purpose of neural operators in to learn a map between infinite dimensional spaces.  More intuitively the purpose of neural operators is to learn a mapping between spaces of infinite resolution, from samples of finite resolution.
+Recall that an operator takes one function and gives another.  The purpose of neural operators is to extend spatially aware neural networks from finite-dimension to infinite dimension.  Like the functions above can have arbitrary resolution in parameter space $u(x) = y$, the same property is desired for neural network that can take and map an arbitrary temporal-spatial arrangement of states and parameters, as a function, at arbitrary resolution.  \cite{neural_operators} formally describes neural operators as well as provide proof of their universal approximation.  Formally, the purpose of neural operators is to learn a map between infinite dimensional spaces.  More intuitively, the purpose of neural operators is to learn a mapping between spaces of infinite resolution, from samples of finite resolution.
 \begin{equation}
 \mathcal{G}_\theta: \mathcal{A} \rightarrow \mathcal{U}
 \end{equation}
@@ -321,11 +321,11 @@ Let's look at a simple example in Nvidia's Modulus, the lid driven cavity \cite{
 u\frac{\partial u}{\partial x} + v\frac{\partial u}{\partial y} + \frac{\partial p}{\partial x} - \textit{V}(\frac{\partial^2u}{\partial x^2} + \frac{\partial^2u}{\partial y^2})= 0 \\
 u\frac{\partial v}{\partial x} + v\frac{\partial v}{\partial y} + \frac{\partial p}{\partial x} - \textit{V}(\frac{\partial^2v}{\partial x^2} + \frac{\partial^2v}{\partial y^2})= 0
 \end{gather}
-Which creates the contraints:
+Which creates the constraints:
 \begin{equation}
 \textbf{L} = \frac{V}{N}\sum_{n = 0}^{N - 1}((0 - continuity(x_n, y_n))^2 + (0 - momentum_x(x_n, y_n))^2 + (0 - momentum_y(x_n, y_n))^2) 
 \end{equation}
-Initial conditions and boundary conditions are implemented in Modulus as data contraints, sampled from the problem domain.  The interior of the container is constrained to the PDEs.  Samples from the top wall have an output labels of $u=1.0, v = 0.0$.  The samples from the other walls have labels $u=0.0, v = 0.0$.  In order to help the neural network learn boundary constraints, the engineer can determine how many samples should come from the boundary and how many should come from the interior.  The corner between the top wall and the side walls cause a discontinuity.  To help the neural network learn faster, modulus can take a lambda weighting for the boundary conditions.  In this case the top wall is modified with $\lambda = (u = 1.0 - 20.0|x|, 1.0)$.  This is visualized in Figure \ref{fig:ldclambda}.
+Initial conditions and boundary conditions are implemented in Modulus as data contraints, sampled from the problem domain.  The interior of the container is constrained to the PDEs.  Samples from the top wall have output labels of $u=1.0, v = 0.0$.  The samples from the other walls have labels $u=0.0, v = 0.0$.  In order to help the neural network learn boundary constraints, the engineer can determine how many samples should come from the boundary and how many should come from the interior.  The corner between the top wall and the side walls causes a discontinuity.  To help the neural network learn faster, modulus can take a lambda weighting for the boundary conditions.  In this case the top wall is modified with $\lambda = (u = 1.0 - 20.0|x|, 1.0)$.  This is visualized in Figure \ref{fig:ldclambda}.
 \begin{figure}
 	\centering
 	\includegraphics[width=1\linewidth]{images/ldc_lambda}
@@ -333,7 +333,7 @@ Initial conditions and boundary conditions are implemented in Modulus as data co
 	\label{fig:ldclambda}
 \end{figure}
 
-The models trains fairly quickly on a relatively old computer (when making concessions due to limited memory).  The tensorboard in Figure \ref{fig:screenshot-2022-05-09-at-17-19-07-tensorboard} shows the results.  If you have the compute and memory resources you can compare results to the CFD software package OpenFOAM.
+The model trains fairly quickly on a relatively old computer (when making concessions due to limited memory).  The tensorboard in Figure \ref{fig:screenshot-2022-05-09-at-17-19-07-tensorboard} shows the results.  If you have the compute and memory resources you can compare results to the CFD software package OpenFOAM.
 \begin{figure}
 	\centering
 	\includegraphics[width=0.7\linewidth]{"images/Screenshot 2022-05-09 at 17-19-07 TensorBoard"}
@@ -341,7 +341,7 @@ The models trains fairly quickly on a relatively old computer (when making conce
 	\label{fig:screenshot-2022-05-09-at-17-19-07-tensorboard}
 \end{figure}
 
-The most obvious use case of PINNs is to learn a sparsely sampled problem.  We can consider a sparsely sampled problem as one where the order of magnitude of the number of observations is less than the order of magnitude of the number of parameters.  In such a case, including PDE based losses may augment the data and help the network learn the problem.  An important advantage of PINNs over traditional solvers is the ability to do solve them over parameterized geometries.  \cite{neural_operators} notes that PINNs are only useful for learning a single problem.  Any spatial dependencies are encoded into the network.
+The most obvious use case of PINNs is to learn a sparsely sampled problem.  We can consider a sparsely sampled problem as one where the order of magnitude of the number of observations is less than the order of magnitude of the number of parameters.  In such a case, including PDE based losses may augment the data and help the network learn the problem.  An important advantage of PINNs over traditional solvers is the ability to solve them over parameterized geometries.  \cite{neural_operators} notes that PINNs are only useful for learning a single problem.  Any spatial dependencies are encoded into the network.
 
 \subsubsection{Neural Operators: Physics-Informed Neural Operator}
 [NEED TO WRITE]
@@ -353,7 +353,7 @@ As an example, we have a signal power loss application.  In order to enable tran
 \begin{equation}
 Loss = f(\textbf{h}_0, \textbf{h}_1, \textbf{h}_2, \textbf{d}_1, \textbf{d}_2, \textbf{freq})
 \end{equation}
-Where the inputs are all vectors to enable parallel computation of many example.  Every entry $i$ is an example.
+Where the inputs are all vectors to enable parallel computation of many examples.  Every entry $i$ is an example.
 \begin{equation}
 Loss_i = FSPL_i + LOS_i + NLOS_i
 \end{equation}
@@ -396,7 +396,7 @@ We can use this simulation to train a neural network to approximate it's results
 \subsection{Validation with High Fidelity Simulations}
 Another way to take advantage of high fidelity simulations is to use them as part of validation.  This technique can effectively use the limited, expensive data from these simulations as part of hyper-parameter tuning.  This induces a bias in the surrogate model towards the results of the simulation.
 \subsection{Neural Adapter}
-A neural adapter, as described by \cite{zubov2021neuralpde} is similar to transfer learning.  Instead of retraining a neural network or adding layers to it, a new neural network is trained to adapt a previously trained model to the new problem domian.  Figure \ref{fig:neuraladapter} shows the general architecture of the problem.  
+A neural adapter, as described by \cite{zubov2021neuralpde} is similar to transfer learning.  Instead of retraining a neural network or adding layers to it, a new neural network is trained to adapt a previously trained model to the new problem domain.  Figure \ref{fig:neuraladapter} shows the general architecture of the problem.  
 \begin{figure}
 	\centering
 	\includegraphics[width=1.0\linewidth]{images/neural_adapter}
