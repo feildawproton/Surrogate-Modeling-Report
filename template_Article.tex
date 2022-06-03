@@ -10,7 +10,7 @@
 %opening
 \title{Surrogate Modeling with Physics-Based Neural Networks}
 
-\author{Alex Feild, AML Group}
+\author{Alex Feild}
 
 \begin{document}
 
@@ -413,10 +413,13 @@ Where $S(\textbf{x}_k)$ is the output from the simulation.
 \subsection{Inverse Problems}
 [NEED TO WRITE]
 \subsection{Implicit Model Representations}
+Because we are researching surrogate models for EOIR and light transport, we will likely need to perform research into 3D model, texture, and lighting representations useful for learning problems.  This has been done with the output of neural networks controlling triangle meshes, voxels, and neural adaptors for lighting.  Recently, neural network representations have been used to reconstruct 3D scenes.  These representations are implicit and can be evaluated at arbitrary resolution.
 \subsubsection{Neural Radiance Fields}
 [NEED TO WRITE]
 \subsection{Uncertainty in Physics-Based Neural Networks}
-[NEED TO WRITE]
+There are uncertainties and possible errors in data, measurements, physics models, and surrogate models.  We would like some way for our models to couch the uncertainty of their inferences.  The uncertainty from data is called aleatoric uncertainty.  The uncertainty in our model is called epistemic uncertainty.  The book Physics Based Deep Learning [cite it] describes an approach using Bayesian Neural Networks (BNNs) to make posterior inference possible.  The goal of posterior inference is to reproduce the full output distributions.  BNNs do this by assuming probability distributions for the parameters.  At this point it is still very difficult to train BNNs.
+
+One of the major advantages of fast surrogate models is the ability to perform Monte Carlo simulations and get statistical distribution on the likely outcomes.  One of the major limitations of large physics simulations is that they either take a very long time to run or are uselessly coarse.  Because of this long run time, variational statistics (such that you might get from a Monte Carlo) cannot be calculated.  This is a famous issue with climate models, where each paper represents only one or a few model runs.  One of the purposes of Nvidia’s Earth-2 is to enable faster execution of weather and climate simulations.  This can then enable an ensemble of many simulations with varying model starting parameters.  After searching the parameter space, we can make statements on the relative likelihood of certain system states. 
 
 \section{Packages}
 Physics-based neural networks can be implemented fairly easily in any neural network framework, as \cite{pbdl_book} does with PyTorch.  In fact, since none of the core techniques are black boxes, any of these methods could be re-implemented in a fast language if necessary.  However, there are some packages available that make quick development of physics-based neural networks easier. 
@@ -428,6 +431,9 @@ Physics-based neural networks can be implemented fairly easily in any neural net
 3.) SciAnn: Neural Networks for Scientific Computations, \cite{haghighat2021sciann}, a package using TensorFlow and Keras.
 
 4.) DeepXDE, \cite{lu2021deepxde},  a library containing algorithms for PINNs and DeepONets.  Compatible with Tensorflow and PyTorch.
+
+\section{Evaluation Metrics}
+In addition to metrics such as accuracy and error, domain specific evaluation metrics should be adopted to fully assess the performance of surrogate models.  For example, Lai et al [cite Bridging by Lai et al 2019], compared several unsupervised loss functions for image reconstruction.  These methods went beyond simple cosine similarity or mean squared error, in order to encourage semantically similar reconstructions.  They also compared and qualified reconstructions produced by models trained by various loss functions to human preferences.  For our purposes, we may construct evaluation metrics and loss functions that focus on the most important aspects of the simulation results (ex: shape and contrast vs mean intensity and noise). 
 
 \bibliographystyle{plain}
 \bibliography{reference}
